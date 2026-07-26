@@ -386,7 +386,7 @@ export default function LeadDashboard() {
   return (
     <div style={styles.page}>
       <div style={styles.topbar}>
-        <div style={styles.brand}>Commercial Advisor CRM</div>
+        <div style={styles.brand}>Plataforma VIVI · CRM Comercial</div>
         <div style={styles.topNav}>
           <span style={styles.topNavItem}>Dashboard</span>
           <span style={{ ...styles.topNavItem, ...styles.topNavItemActive }}>Leads</span>
@@ -440,7 +440,7 @@ export default function LeadDashboard() {
                   <span style={styles.prioridadBadge}>{d.lead_info.prioridad}</span>
                 </div>
                 <div style={styles.leadSub}>
-                  Prospecto para Proyecto {d.lead_original?.proyecto_interes || "—"} · Comercial Advisor CRM
+                  Prospecto para Proyecto {d.lead_original?.proyecto_interes || "—"} · Plataforma VIVI
                 </div>
               </div>
             </div>
