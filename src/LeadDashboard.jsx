@@ -69,49 +69,157 @@ const DEMO_LEAD = {
         ubicacion: "Ciudadela Maiporé",
         municipio: "Soacha",
         tipo_proyecto: "VIS",
-        tipologia: "Tipo E",
-        precio: 180000000,
+        tipologia: "Tipo D",
+        precio: 150000000,
         brochure_url: "https://colsubsidio.com/brochures/versalles.pdf",
         match_score: 0.648,
         motivo: "Afinidad con el perfil histórico de compradores de Versalles (65% de match); proyecto de interés directo del lead.",
-        cierre_financiero: { cuota_inicial_requerida: 54000000, ahorro_disponible: 60527150, cierre_viable: true, subsidio_aplicable: 52527150 },
+        cierre_financiero: {
+          precio_vivienda: 150000000,
+          cuota_inicial_30_percent: 45000000,
+          aportes_cuota_inicial: {
+            cesantias: 3000000,
+            ahorros: 5000000,
+            subsidio_caja: 52527150,
+            subsidio_mi_casa_ya: 35018100,
+            total_aportes: 95545250
+          },
+          estado_cuota_inicial: {
+            cubierta: true,
+            saldo_faltante: 0,
+            plazo_entrega_meses: 24,
+            cuota_mensual_inicial_estimada: 0,
+            cumple_cuota_inicial: true
+          },
+          credito_hipotecario_70_percent: {
+            monto_a_financiar: 105000000,
+            plazo_anos: 20,
+            tasa_interes_ea: 0.12,
+            cuota_mensual_credito_estimada: 1111555,
+            cuota_maxima_permitida_40_percent: 1160000,
+            cumple_limite_cuota: true
+          },
+          cierre_viable: true,
+          detalle_cierre: "Cierre financiero viable y validado."
+        }
       },
       {
         proyecto: "Residencial Parque",
         ubicacion: "Parque Central",
         municipio: "Bogotá",
         tipo_proyecto: "VIS",
-        tipologia: "Tipo D",
+        tipologia: "Tipo C",
         precio: 155000000,
         brochure_url: "https://colsubsidio.com/brochures/residencial-parque.pdf",
         match_score: 0.95,
         motivo: "Alta afinidad con el perfil histórico de compradores de este proyecto (95% de match).",
-        cierre_financiero: { cuota_inicial_requerida: 46500000, ahorro_disponible: 60527150, cierre_viable: true, subsidio_aplicable: 50000000 },
+        cierre_financiero: {
+          precio_vivienda: 155000000,
+          cuota_inicial_30_percent: 46500000,
+          aportes_cuota_inicial: {
+            cesantias: 3000000,
+            ahorros: 5000000,
+            subsidio_caja: 50000000,
+            subsidio_mi_casa_ya: 0,
+            total_aportes: 58000000
+          },
+          estado_cuota_inicial: {
+            cubierta: true,
+            saldo_faltante: 0,
+            plazo_entrega_meses: 24,
+            cuota_mensual_inicial_estimada: 0,
+            cumple_cuota_inicial: true
+          },
+          credito_hipotecario_70_percent: {
+            monto_a_financiar: 108500000,
+            plazo_anos: 20,
+            tasa_interes_ea: 0.11,
+            cuota_mensual_credito_estimada: 1050000,
+            cuota_maxima_permitida_40_percent: 1160000,
+            cumple_limite_cuota: true
+          },
+          cierre_viable: true,
+          detalle_cierre: "Cierre financiero viable con subsidio de caja."
+        }
       },
       {
         proyecto: "Mirador del Sol",
         ubicacion: "Vía Chía",
         municipio: "Chía",
         tipo_proyecto: "VIS",
-        tipologia: "Tipo C",
+        tipologia: "Tipo B",
         precio: 148000000,
         brochure_url: "https://colsubsidio.com/brochures/mirador-del-sol.pdf",
         match_score: 0.88,
         motivo: "Buena afinidad con el perfil histórico de compradores (88% de match).",
-        cierre_financiero: { cuota_inicial_requerida: 44400000, ahorro_disponible: 60527150, cierre_viable: true, subsidio_aplicable: 48000000 },
+        cierre_financiero: {
+          precio_vivienda: 148000000,
+          cuota_inicial_30_percent: 44400000,
+          aportes_cuota_inicial: {
+            cesantias: 3000000,
+            ahorros: 2000000,
+            subsidio_caja: 48000000,
+            subsidio_mi_casa_ya: 0,
+            total_aportes: 53000000
+          },
+          estado_cuota_inicial: {
+            cubierta: true,
+            saldo_faltante: 0,
+            plazo_entrega_meses: 24,
+            cuota_mensual_inicial_estimada: 0,
+            cumple_cuota_inicial: true
+          },
+          credito_hipotecario_70_percent: {
+            monto_a_financiar: 103600000,
+            plazo_anos: 20,
+            tasa_interes_ea: 0.12,
+            cuota_mensual_credito_estimada: 1096738,
+            cuota_maxima_permitida_40_percent: 1160000,
+            cumple_limite_cuota: true
+          },
+          cierre_viable: true,
+          detalle_cierre: "Cierre financiero viable y validado."
+        }
       },
       {
         proyecto: "Torres de Sabana",
         ubicacion: "Sabana Norte",
         municipio: "Cota",
         tipo_proyecto: "VIP",
-        tipologia: "Tipo B",
+        tipologia: "Tipo A",
         precio: 225000000,
         brochure_url: "https://colsubsidio.com/brochures/torres-de-sabana.pdf",
         match_score: 0.75,
         motivo: "Afinidad media con el perfil histórico; precio por encima del rango recurrente del lead.",
-        cierre_financiero: { cuota_inicial_requerida: 67500000, ahorro_disponible: 60527150, cierre_viable: false, subsidio_aplicable: 40000000 },
-      },
+        cierre_financiero: {
+          precio_vivienda: 225000000,
+          cuota_inicial_30_percent: 67500000,
+          aportes_cuota_inicial: {
+            cesantias: 3000000,
+            ahorros: 5000000,
+            subsidio_caja: 40000000,
+            subsidio_mi_casa_ya: 0,
+            total_aportes: 48000000
+          },
+          estado_cuota_inicial: {
+            cubierta: false,
+            saldo_faltante: 19500000,
+            plazo_entrega_meses: 24,
+            cuota_mensual_inicial_estimada: 812500,
+            cumple_cuota_inicial: false
+          },
+          credito_hipotecario_70_percent: {
+            monto_a_financiar: 157500000,
+            plazo_anos: 20,
+            tasa_interes_ea: 0.12,
+            cuota_mensual_credito_estimada: 1667333,
+            cuota_maxima_permitida_40_percent: 1160000,
+            cumple_limite_cuota: false
+          },
+          cierre_viable: false,
+          detalle_cierre: "Déficit en cuota inicial y la cuota mensual proyectada excede la capacidad de pago del cliente."
+        }
+      }
     ],
     ai_summary: "Lead ALTA interesado en Soacha. Mejor match: Residencial Parque. Subsidio estimado: $52,527,150.",
     lead_original: {
@@ -215,6 +323,7 @@ export default function LeadDashboard() {
   const [usingDemo, setUsingDemo] = useState(false);
   const [activeTab, setActiveTab] = useState("Lead Segmentation");
   const [expandedProject, setExpandedProject] = useState(null);
+  const [selectedLeadId, setSelectedLeadId] = useState(null);
 
   useEffect(() => {
     let cancelado = false;
@@ -229,17 +338,28 @@ export default function LeadDashboard() {
         if (lista.length === 0) {
           setRecord(DEMO_LEAD);
           setUsingDemo(true);
+          setSelectedLeadId(null);
           return;
         }
-        const detalle = await fetch(`${API_BASE_URL}/api/leads/${lista[0].id}`);
+
+        // Determinar qué lead cargar: el seleccionado actualmente (si existe en la lista) o el primero de la lista
+        const idACargar = (selectedLeadId && lista.some((l) => l.id === selectedLeadId))
+          ? selectedLeadId
+          : lista[0].id;
+
+        const detalle = await fetch(`${API_BASE_URL}/api/leads/${idACargar}`);
         const full = await detalle.json();
         if (cancelado) return;
         setRecord(full);
         setUsingDemo(false);
+        if (idACargar !== selectedLeadId) {
+          setSelectedLeadId(idACargar);
+        }
       } catch {
         if (cancelado) return;
         setRecord(DEMO_LEAD);
         setUsingDemo(true);
+        setSelectedLeadId(null);
       }
     }
 
@@ -249,17 +369,10 @@ export default function LeadDashboard() {
       cancelado = true;
       clearInterval(interval);
     };
-  }, []);
+  }, [selectedLeadId]);
 
   async function seleccionarLead(id) {
-    try {
-      const r = await fetch(`${API_BASE_URL}/api/leads/${id}`);
-      const full = await r.json();
-      setRecord(full);
-      setUsingDemo(false);
-    } catch {
-      // si falla, se queda con lo que ya estaba mostrando
-    }
+    setSelectedLeadId(id);
   }
 
   if (!record) {
@@ -474,29 +587,50 @@ function ProyectosTable({ d, expandedProject, setExpandedProject }) {
             <th style={styles.th}>Match</th>
             <th style={styles.th}>Precio</th>
             <th style={styles.th}>Cuota inicial</th>
-            <th style={styles.th}>Ahorro disponible</th>
+            <th style={styles.th}>Aportes/Ahorro</th>
             <th style={styles.th}>Estado</th>
             <th style={styles.th}></th>
           </tr>
         </thead>
         <tbody>
           {d.matching_projects.map((p) => {
-            const diff = p.cierre_financiero.ahorro_disponible - p.cierre_financiero.cuota_inicial_requerida;
+            const cf = p.cierre_financiero || {};
+            const isNew = cf.aportes_cuota_inicial !== undefined;
+
+            const cuotaInicial = isNew ? cf.cuota_inicial_30_percent : cf.cuota_inicial_requerida;
+            const ahorro = isNew ? cf.aportes_cuota_inicial?.total_aportes : cf.ahorro_disponible;
+            const viable = cf.cierre_viable;
+
+            const diff = ahorro - cuotaInicial;
             const isOpen = expandedProject === p.proyecto;
+
             return (
               <React.Fragment key={p.proyecto}>
                 <tr>
                   <td style={styles.td}>
-                    <div style={{ fontWeight: 600 }}>{p.proyecto}</div>
+                    <div style={{ marginBottom: 2 }}>
+                      <a
+                        href={p.brochure_url}
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{
+                          fontWeight: 600,
+                          color: "#4F46E5",
+                          textDecoration: "none",
+                        }}
+                      >
+                        {p.proyecto} ↗
+                      </a>
+                    </div>
                     <div style={styles.tdSub}>{p.municipio} · {p.tipologia}</div>
                   </td>
                   <td style={styles.td}>{pct(p.match_score)}</td>
                   <td style={styles.td}>{money(p.precio)}</td>
-                  <td style={styles.td}>{money(p.cierre_financiero.cuota_inicial_requerida)}</td>
-                  <td style={styles.td}>{money(p.cierre_financiero.ahorro_disponible)}</td>
+                  <td style={styles.td}>{money(cuotaInicial)}</td>
+                  <td style={styles.td}>{money(ahorro)}</td>
                   <td style={styles.td}>
-                    <span style={p.cierre_financiero.cierre_viable ? styles.tagViable : styles.tagDeficit}>
-                      {p.cierre_financiero.cierre_viable ? "VIABLE" : "DÉFICIT"}
+                    <span style={viable ? styles.tagViable : styles.tagDeficit}>
+                      {viable ? "VIABLE" : "DÉFICIT"}
                     </span>
                     <div style={{ fontSize: 11, color: diff >= 0 ? "#166534" : "#991B1B", marginTop: 2 }}>
                       {diff >= 0 ? `+${money(diff)} excedente` : `${money(diff)} faltante`}
@@ -514,15 +648,130 @@ function ProyectosTable({ d, expandedProject, setExpandedProject }) {
                 {isOpen && (
                   <tr>
                     <td colSpan={7} style={styles.expandedRow}>
-                      <div style={styles.expandedGrid}>
-                        <div><b>Ubicación:</b> {p.ubicacion}</div>
-                        <div><b>Tipo:</b> {p.tipo_proyecto}</div>
-                        <div><b>Subsidio aplicable:</b> {money(p.cierre_financiero.subsidio_aplicable)}</div>
-                        <div><b>Motivo del match:</b> {p.motivo}</div>
-                        <div>
-                          <a href={p.brochure_url} target="_blank" rel="noreferrer" style={styles.brochureLink}>
-                            Ver brochure ↗
-                          </a>
+                      <div style={styles.expandedWrapper}>
+                        <div style={styles.expandedSectionHeader}>
+                          Análisis de Cierre Financiero para {p.proyecto}
+                        </div>
+                        
+                        <div style={styles.analysisGrid}>
+                          {/* Col 1: Cuota Inicial */}
+                          <div style={styles.analysisCard}>
+                            <div style={styles.analysisCardTitle}>1. Aportes para Cuota Inicial (30%)</div>
+                            <div style={styles.analysisMetrics}>
+                              {isNew ? (
+                                <>
+                                  <div style={styles.metricRow}>
+                                    <span>Cesantías:</span>
+                                    <strong>{money(cf.aportes_cuota_inicial?.cesantias)}</strong>
+                                  </div>
+                                  <div style={styles.metricRow}>
+                                    <span>Ahorro voluntario:</span>
+                                    <strong>{money(cf.aportes_cuota_inicial?.ahorros)}</strong>
+                                  </div>
+                                  <div style={styles.metricRow}>
+                                    <span>Subsidio Caja:</span>
+                                    <strong>{money(cf.aportes_cuota_inicial?.subsidio_caja)}</strong>
+                                  </div>
+                                  {cf.aportes_cuota_inicial?.subsidio_mi_casa_ya > 0 && (
+                                    <div style={styles.metricRow}>
+                                      <span>Subsidio Mi Casa Ya:</span>
+                                      <strong>{money(cf.aportes_cuota_inicial?.subsidio_mi_casa_ya)}</strong>
+                                    </div>
+                                  )}
+                                  <div style={styles.divider} />
+                                  <div style={styles.metricRow}>
+                                    <span>Total aportes:</span>
+                                    <strong>{money(ahorro)}</strong>
+                                  </div>
+                                  <div style={styles.metricRow}>
+                                    <span>Cuota inicial requerida:</span>
+                                    <strong>{money(cuotaInicial)}</strong>
+                                  </div>
+                                  <div style={styles.divider} />
+                                  <div style={styles.metricRow}>
+                                    <span>Estado cuota inicial:</span>
+                                    <span style={cf.estado_cuota_inicial?.cubierta ? styles.badgeSuccess : styles.badgeDanger}>
+                                      {cf.estado_cuota_inicial?.cubierta ? "CUBIERTA" : "INSUFICIENTE"}
+                                    </span>
+                                  </div>
+                                  {!cf.estado_cuota_inicial?.cubierta && cf.estado_cuota_inicial?.saldo_faltante > 0 && (
+                                    <div style={styles.alertBox}>
+                                      <div>Déficit de <strong>{money(cf.estado_cuota_inicial.saldo_faltante)}</strong>.</div>
+                                      <div style={{ fontSize: 11.5, marginTop: 4 }}>
+                                        Se estima una cuota de ahorro de <strong>{money(cf.estado_cuota_inicial.cuota_mensual_inicial_estimada)}/mes</strong> durante <strong>{cf.estado_cuota_inicial.plazo_entrega_meses} meses</strong>.
+                                      </div>
+                                    </div>
+                                  )}
+                                </>
+                              ) : (
+                                <>
+                                  <div style={styles.metricRow}>
+                                    <span>Ahorro disponible:</span>
+                                    <strong>{money(ahorro)}</strong>
+                                  </div>
+                                  <div style={styles.metricRow}>
+                                    <span>Cuota inicial requerida:</span>
+                                    <strong>{money(cuotaInicial)}</strong>
+                                  </div>
+                                  <div style={styles.divider} />
+                                  <div style={styles.metricRow}>
+                                    <span>Subsidio aplicable:</span>
+                                    <strong>{money(cf.subsidio_aplicable)}</strong>
+                                  </div>
+                                </>
+                              )}
+                            </div>
+                          </div>
+
+                          {/* Col 2: Crédito Hipotecario */}
+                          <div style={styles.analysisCard}>
+                            <div style={styles.analysisCardTitle}>2. Crédito Hipotecario Proyectado (70%)</div>
+                            <div style={styles.analysisMetrics}>
+                              {isNew && cf.credito_hipotecario_70_percent ? (
+                                <>
+                                  <div style={styles.metricRow}>
+                                    <span>Monto a financiar:</span>
+                                    <strong>{money(cf.credito_hipotecario_70_percent.monto_a_financiar)}</strong>
+                                  </div>
+                                  <div style={styles.metricRow}>
+                                    <span>Plazo e interés:</span>
+                                    <strong>{cf.credito_hipotecario_70_percent.plazo_anos} años @ {pct(cf.credito_hipotecario_70_percent.tasa_interes_ea || 0)} EA</strong>
+                                  </div>
+                                  <div style={styles.metricRow}>
+                                    <span>Cuota mensual crédito:</span>
+                                    <strong>{money(cf.credito_hipotecario_70_percent.cuota_mensual_credito_estimada)}/mes</strong>
+                                  </div>
+                                  <div style={styles.metricRow}>
+                                    <span>Capacidad máxima (40%):</span>
+                                    <strong>{money(cf.credito_hipotecario_70_percent.cuota_maxima_permitida_40_percent)}/mes</strong>
+                                  </div>
+                                  <div style={styles.divider} />
+                                  <div style={styles.metricRow}>
+                                    <span>Estado límite cuota:</span>
+                                    <span style={cf.credito_hipotecario_70_percent.cumple_limite_cuota ? styles.badgeSuccess : styles.badgeDanger}>
+                                      {cf.credito_hipotecario_70_percent.cumple_limite_cuota ? "CUMPLE" : "EXCEDE CAPACIDAD"}
+                                    </span>
+                                  </div>
+                                </>
+                              ) : (
+                                <div style={styles.emptyState}>No hay información de crédito disponible en la estructura antigua.</div>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Footer del análisis */}
+                        <div style={styles.analysisFooter}>
+                          <div style={styles.analysisResult}>
+                            <strong>Detalle del Cierre:</strong> {cf.detalle_cierre || "Cálculo estándar basado en la diferencia de ahorros."}
+                          </div>
+                          <div style={styles.metaInfo}>
+                            <span><b>Ubicación:</b> {p.ubicacion} ({p.municipio})</span>
+                            <span><b>Match:</b> {pct(p.match_score)} ({p.motivo})</span>
+                            <a href={p.brochure_url} target="_blank" rel="noreferrer" style={styles.brochureButton}>
+                              Ver brochure del proyecto ↗
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </td>
@@ -890,4 +1139,113 @@ const styles = {
   infoValue: { fontSize: 13, fontWeight: 600, marginTop: 2 },
   resumenText: { fontSize: 12.5, color: "#374151", marginTop: 8, lineHeight: 1.5 },
   emptyState: { fontSize: 12.5, color: "#9CA3AF", fontStyle: "italic" },
+  expandedWrapper: {
+    background: "#F9FAFB",
+    border: "1px solid #E5E7EB",
+    borderRadius: 8,
+    padding: 16,
+    marginTop: 8,
+    marginBottom: 8,
+  },
+  expandedSectionHeader: {
+    fontSize: 13.5,
+    fontWeight: 700,
+    color: "#374151",
+    marginBottom: 12,
+    borderBottom: "1px solid #E5E7EB",
+    paddingBottom: 6,
+  },
+  analysisGrid: {
+    display: "flex",
+    gap: 16,
+    flexWrap: "wrap",
+  },
+  analysisCard: {
+    flex: 1,
+    minWidth: 280,
+    background: "#FFFFFF",
+    border: "1px solid #E5E7EB",
+    borderRadius: 8,
+    padding: 14,
+  },
+  analysisCardTitle: {
+    fontSize: 12,
+    fontWeight: 700,
+    color: "#4F46E5",
+    marginBottom: 10,
+    textTransform: "uppercase",
+    letterSpacing: 0.5,
+  },
+  analysisMetrics: {
+    display: "flex",
+    flexDirection: "column",
+    gap: 6,
+  },
+  metricRow: {
+    display: "flex",
+    justifyContent: "space-between",
+    fontSize: 12,
+    color: "#4B5563",
+  },
+  divider: {
+    height: 1,
+    background: "#E5E7EB",
+    margin: "6px 0",
+  },
+  badgeSuccess: {
+    background: "#DCFCE7",
+    color: "#166534",
+    fontSize: 10,
+    fontWeight: 700,
+    padding: "2px 6px",
+    borderRadius: 4,
+  },
+  badgeDanger: {
+    background: "#FEE2E2",
+    color: "#991B1B",
+    fontSize: 10,
+    fontWeight: 700,
+    padding: "2px 6px",
+    borderRadius: 4,
+  },
+  alertBox: {
+    background: "#FFFBEB",
+    border: "1px solid #FEF3C7",
+    borderRadius: 6,
+    padding: 8,
+    marginTop: 6,
+    fontSize: 12,
+    color: "#92400E",
+  },
+  analysisFooter: {
+    marginTop: 14,
+    borderTop: "1px solid #E5E7EB",
+    paddingTop: 12,
+    display: "flex",
+    flexDirection: "column",
+    gap: 8,
+  },
+  analysisResult: {
+    fontSize: 12.5,
+    color: "#1F2937",
+    lineHeight: 1.4,
+  },
+  metaInfo: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    fontSize: 11.5,
+    color: "#6B7280",
+    flexWrap: "wrap",
+    gap: 8,
+  },
+  brochureButton: {
+    color: "#4F46E5",
+    fontWeight: 600,
+    textDecoration: "none",
+    fontSize: 12,
+    background: "#EEF2FF",
+    padding: "4px 10px",
+    borderRadius: 6,
+  },
 };
